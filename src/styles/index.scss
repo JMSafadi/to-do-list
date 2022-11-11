@@ -1,0 +1,75 @@
+body,html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+        /* ff 3.6+ */
+        background:-moz-linear-gradient(90deg, rgba(33, 32, 33, 1) 0%, rgba(48, 48, 93, 1) 100%); 
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-linear-gradient(90deg, rgba(33, 32, 33, 1) 0%, rgba(48, 48, 93, 1) 100%);
+        /* opera 11.10+ */
+        background:-o-linear-gradient(90deg, rgba(33, 32, 33, 1) 0%, rgba(48, 48, 93, 1) 100%);
+        /* ie 6-9 */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30305D', endColorstr='#212021', GradientType=0 );
+        /* ie 10+ */
+        background:-ms-linear-gradient(90deg, rgba(33, 32, 33, 1) 0%, rgba(48, 48, 93, 1) 100%);
+        /* global 94%+ browsers support */
+        background:linear-gradient(90deg, rgba(33, 32, 33, 1) 0%, rgba(48, 48, 93, 1) 100%);
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    margin: 1rem;
+}
+
+
+.task__list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 2rem;
+    min-width: 360px;
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 50% 12%, rgba(120, 120, 120, 1) 0%, rgba(253, 253, 253, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 50% 12%, rgba(120, 120, 120, 1) 0%, rgba(253, 253, 253, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 50% 12%, rgba(120, 120, 120, 1) 0%, rgba(253, 253, 253, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 50% 12%, rgba(120, 120, 120, 1) 0%, rgba(253, 253, 253, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 50% 12%, rgba(120, 120, 120, 1) 0%, rgba(253, 253, 253, 1) 100%);
+
+    .card {
+        background-color: white;
+        .card-header {
+            text-align: center;
+        }
+        .card-body {
+            height: 350px;
+            width: 400px;
+        }
+    }
+}
+
+.task-action {
+    cursor: pointer;
+}
+
+.task-completed {
+    color: grey;
+    text-decoration: line-through
+}
+
+.task-pending {
+    color: crimson;
+    font-weight: bold;
+}
+

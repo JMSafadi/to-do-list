@@ -1,0 +1,24 @@
+.task-action {
+    cursor: pointer;
+}
+
+.task-completed {
+    color: grey;
+    text-decoration: line-through
+}
+
+.task-pending {
+    color: crimson;
+    font-weight: bold;
+}
+
+.task__list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+}
