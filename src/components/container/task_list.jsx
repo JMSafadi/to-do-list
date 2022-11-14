@@ -48,26 +48,26 @@ const TaskListComponent = () => {
    function Table() {
         return (
             <table className='table'>
-            <thead>
-                <tr>
-                    <th scope='col'>Title</th>
-                    <th scope='col'>Description</th>
-                    <th scope='col'>Priority</th>
-                    <th scope='col'>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                {tasks.map((task, index) => {
-                    return (
-                        <TaskComponent 
-                            key={index} 
-                            task={task}
-                            complete={completeTask}
-                            remove={deleteTask}>
-                        </TaskComponent>
-                    )
-                })}
-            </tbody>
+                <thead>
+                    <tr>
+                        <th scope='col'>Title</th>
+                        <th scope='col'>Description</th>
+                        <th scope='col'>Priority</th>
+                        <th scope='col'>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {tasks.map((task, index) => {
+                        return (
+                            <TaskComponent 
+                                key={index} 
+                                task={task}
+                                complete={completeTask}
+                                remove={deleteTask}>
+                            </TaskComponent>
+                        )
+                    })}
+                </tbody>
         </table>
         )
    }

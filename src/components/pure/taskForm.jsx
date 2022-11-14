@@ -20,11 +20,11 @@ const TaskForm = ({add, length}) => {
     }
 
     return (
-        <form onSubmit={addTask} className='d-flex justify-content align-items-center pt-2' autoComplete="off">
+        <form onSubmit={addTask} className='form__container d-flex justify-content align-items-center pt-2' autoComplete="off">
             <div className='form-outline flex-fill'>
-                <input className='form-control form-control-lg m-2' ref={nameRef} id='inputName' type='text' required autoFocus placeholder='Task name' autoComplete="false" name="hidden"></input>
-                <input className='form-control form-control-lg m-2' ref={descriptionRef} id='descriptionName' type='text' required placeholder='Task Description' autoComplete="false" name="hidden"></input>
-                <label className='sr-only' htmlFor='selectLevel'><p style={{color: 'black'}}>Choose Priority:</p></label>
+                <input className='form-control form-control-lg m-2 form__input' ref={nameRef} id='inputName' type='text' required autoFocus placeholder='Task name' autoComplete="false" name="hidden"></input>
+                <input className='form-control form-control-lg m-2 form__input' ref={descriptionRef} id='descriptionName' type='text' required placeholder='Task Description' autoComplete="false" name="hidden"></input>
+                <label className='sr-only form__input' htmlFor='selectLevel'><p style={{color: 'black'}}>Choose Priority:</p></label>
                 <select className='form-control form-control-lg' ref={levelRef} defaultValue={levels.NORMAL} id='selectLevel'>
                     <option value={levels.NORMAL}>
                         Normal

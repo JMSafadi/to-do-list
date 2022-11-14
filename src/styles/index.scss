@@ -49,6 +49,7 @@ body,html {
 
     .card {
         background-color: white;
+        border-radius: 10px;
         .card-header {
             text-align: center;
         }
@@ -73,3 +74,23 @@ body,html {
     font-weight: bold;
 }
 
+@media screen and (max-width: 520px) {
+    .task__list-container {
+        height: 750px;
+        padding: 0 1rem;
+        font-size: 12px;
+        .card {
+            overflow: hidden;
+            .card-header {
+                h1 {
+                    font-size: 18px;
+                    margin: 0;
+                }
+            }
+            .card-body {
+                padding: 0.3rem;
+                width: 100%;
+            }
+        }
+    }
+}
